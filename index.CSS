@@ -1,0 +1,118 @@
+#Todo-container{
+  display: grid;
+  grid-template-columns: 220px 170px 100px;
+  row-gap: 15px;
+  align-items: center;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%);
+}
+body{
+  color: white;
+}
+#sta-rt {
+  font-family: cursive;
+  animation: blink 1s linear infinite;
+}
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.3;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#Write-it:hover {
+  background: rgb(255, 129, 129);
+  animation: mymove 10s infinite;
+  transition: width 1.5s;
+}
+@keyframes mymove {
+  from {background-color: darkorange}
+  to {background-color: darkblue}
+}
+#Write-it {
+  width: 180px;
+  height: 3em;
+  font-size: x-large;
+  font-family: g;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.2em;
+  border: none;
+  box-shadow: 4px 5px 10px 5px rgba(255, 255, 255, 0.459);
+  background: linear-gradient(45deg, #ffcc00, #ff2f00);
+}
+#Write-it:hover {
+  width: 15em;
+}
+#Select-it {
+  width: 28px;
+  height: 3em;
+  font-size: x-large;
+  font-family: g;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 0.6em;
+  border-radius: 0.2em;
+  border: none;
+  box-shadow: 4px 5px 10px 5px rgba(255, 255, 255, 0.459);
+  background: linear-gradient(45deg, #ff2200, #ff0077);
+}
+#Select-it:hover{
+  background: rgb(255, 129, 129);
+  animation: secmove 10s infinite;
+  transition: width 1.5s;
+}
+@keyframes secmove {
+  from {background-color: rgb(255, 0, 136)}
+  to {background-color: rgb(0, 255, 247)}
+}
+#Select-it:hover{
+  width: 180px;
+}
+#add-it{
+  margin-left: 0.6em;
+  width: 4em;
+  height: 4em;
+  border: none;
+  border-radius: 5em;
+  font-weight: 900;
+  font-size: large;
+  cursor: pointer;
+  box-shadow: 4px 5px 10px 5px rgba(255, 255, 255, 0.459);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(90deg, #fffb00, #00a906);
+}
+#add-it:hover{
+  background: linear-gradient(45deg, #0000ff, #01ddff)
+}
+#Done{
+  margin-left: 0.6em;
+  width: 5em;
+  height: 2.5em;
+  border: none;
+  border-radius: 0.4em;
+  font-weight: 900;
+  font-size: larger;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(90deg, darksalmon, rgb(178, 90, 134));
+}
+#Done:hover{
+  background: linear-gradient(45deg, rgb(122, 233, 211), rgb(255, 0, 128));
+}
+@media only screen and (max-width: 414px) {
+  body{
+    visibility: collapse;
+  }
+}
+
+
